@@ -2,8 +2,7 @@
 Sample code and configuration to get easily started with creating ROS pubsub nodes  
   
 ####**_Installing & Building_**  
-  
-  
+-------------------------------  
 
 Make sure ROS is properly installed on your machine by follow these instructions:
 
@@ -53,3 +52,14 @@ cd ~/catkin_ws
 catkin_make  
 catkin_make  
 ``` 
+
+####**_Running The Examples_**  
+-------------------------------  
+
+There are three examples included:  
+
+| Nodes                    | Functions                               |
+| ------------------------ |-----------------------------------------|
+| mytalker, mylistener     | simple pubsub with two std_msg types    |
+| mytalker2, mylistener2   | simple pubsub with custom messsage type |
+| fizz, buzz               | bi-directional pub-sub node example     |  
