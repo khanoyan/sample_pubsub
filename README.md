@@ -2,6 +2,7 @@
 Sample code and configuration to get easily started with creating ROS pubsub nodes
 
 Make sure ROS is properly installed on your machine by follow these instructions:
+
 http://gcc-robotics.github.io/robot-motion-planning-labs/lab0-setting-up/
 
 **A. Create Catkin workspace in your home directory:**
