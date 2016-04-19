@@ -1,5 +1,5 @@
 # sample_pubsub
-Sample code and configuration to get easily started with creating ROS pubsub nodes
+##Sample code and configuration to get easily started with creating ROS pubsub nodes
 
 Make sure ROS is properly installed on your machine by follow these instructions:
 
