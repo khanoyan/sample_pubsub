@@ -63,3 +63,38 @@ There are three examples included:
 | mytalker, mylistener     | simple pubsub with two std_msg types    |
 | mytalker2, mylistener2   | simple pubsub with custom messsage type |
 | fizz, buzz               | bi-directional pub-sub node example     |  
+  
+  
+**A. Open 3 shell windows**  
+
+**B. In all 3 shells, load the environment**
+
+```
+source ~/catkin_ws/devel/setup.bash
+```
+
+**C. In the first window, run the master node**  
+
+```
+roscore
+```
+
+**D. In the second and third windows, run either of these pair of nodes**
+
+*For simple pubsub with two std_msg types*
+```
+rosrun sample_pubsub mytalker
+rosrun sample_pubsub mylistener
+```
+
+*For simple pubsub with custom messsage types*
+```
+rosrun sample_pubsub mytalker2
+rosrun sample_pubsub mylistener2
+```
+
+*For bi-directional pub-sub node example*
+```
+rosrun sample_pubsub fizz
+rosrun sample_pubsub buzz
+```
