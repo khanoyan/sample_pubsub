@@ -1,5 +1,10 @@
 ## sample_pubsub
-Sample code and configuration to get easily started with creating ROS pubsub nodes  
+Sample code and configuration to get started with creating ROS pubsub nodes  
+
+####**_Version History_**  
+-------------------------  
+2016-04-19: Fixed CMakeLists.txt dependency issue & updated this README  
+2016-04-18: Original version
   
 ####**_Installing & Building_**  
 -------------------------------  
@@ -37,19 +42,16 @@ echo $ROS_PACKAGE_PATH
   *YOU SHOULD SEE: /home/YOUR_USER_NAME/catkin_ws/src:/opt/ros/indigo/share:/opt/ros/indigo/stacks*  
 
 
-**E. Clone the sample code from GitHub**  
+**E. Clone the sample code from GitHub:**  
 
 ``` 
 cd ~/catkin_ws/src  
 git clone https://github.com/khanoyan/sample_pubsub.git  
 ``` 
 
-**F. Build the code. Note that there's currently a bug that requires running
-   catkin_make TWICE. The first time it'll throw an error. Second time it'll
-   work. This has to do with dependencies not being properly configured.**
+**F. Build the code:**
 ```    
 cd ~/catkin_ws  
-catkin_make  
 catkin_make  
 ``` 
 
