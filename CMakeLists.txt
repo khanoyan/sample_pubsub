@@ -189,33 +189,29 @@ include_directories(
 
 
 ####################################
-## Stuff needed to be added... GK ##
+## Add your builds below          ##
 ####################################
 include_directories(include ${catkin_INCLUDE_DIRS})
 
+# mytalker / mylistener
 add_executable(mytalker src/mytalker.cpp)
 target_link_libraries(mytalker ${catkin_LIBRARIES})
-# dependancies will come in later.....
-#add_dependencies(talker beginner_tutorials_generate_messages_cpp)
-#add_dependencies(mytalker)
-
 add_executable(mylistener src/mylistener.cpp)
 target_link_libraries(mylistener ${catkin_LIBRARIES})
-# dependancies will come in later.....
-#add_dependencies(listener beginner_tutorials_generate_messages_cpp)
-#add_dependencies(mylistener)
 
-
+# fizz / buzz
 add_executable(fizz src/fizz.cpp)
 target_link_libraries(fizz ${catkin_LIBRARIES})
-
-
 add_executable(buzz src/buzz.cpp)
 target_link_libraries(buzz ${catkin_LIBRARIES})
 
-
+# mytalker2 / mylistener2
+# since these two files have custom messages, a dependency must
+# be specifed for the correct order of compilation
 add_executable(mytalker2 src/mytalker2.cpp)
 target_link_libraries(mytalker2 ${catkin_LIBRARIES})
+add_dependencies(mytalker2 sample_pubsub_generate_messages_cpp)
 
 add_executable(mylistener2 src/mylistener2.cpp)
 target_link_libraries(mylistener2 ${catkin_LIBRARIES})
+add_dependencies(mylistener2 sample_pubsub_generate_messages_cpp)
