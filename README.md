@@ -102,3 +102,13 @@ rosrun sample_pubsub mylistener2
 rosrun sample_pubsub fizz
 rosrun sample_pubsub buzz
 ```
+
+**ROSLAUNCH Method. Running two nodes with one launch file**
+
+```
+roslaunch sample_pubsub fizzbuzz
+```
+or
+```
+roslaunch sample_pubsub talker2
+```
