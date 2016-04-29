@@ -3,7 +3,7 @@ Sample code and configuration to get started with creating ROS pubsub nodes
 
 ####**_Version History_**  
 -------------------------  
-2016-04-29: Added sample launch files
+2016-04-29: Added sample launch files  
 2016-04-19: Fixed CMakeLists.txt dependency issue & updated this README  
 2016-04-18: Original version
 
