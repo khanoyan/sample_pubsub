@@ -1,0 +1,4 @@
+<launch>
+  <node name="fizz" pkg="sample_pubsub" type="fizz" />
+  <node name="buzz" pkg="sample_pubsub" type="buzz" />
+</launch>

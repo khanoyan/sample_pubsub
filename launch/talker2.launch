@@ -1,0 +1,4 @@
+<launch>
+  <node name="talker" pkg="sample_pubsub" type="mytalker2" />
+  <node name="listener" pkg="sample_pubsub" type="mylistener2" />
+</launch>
