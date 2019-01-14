@@ -3,7 +3,7 @@ Sample code and configuration to get started with creating ROS pubsub nodes
 
 
   
-####**_Installing & Building_**  
+#### **_Installing & Building_**  
 -------------------------------  
 
 Make sure ROS is properly installed on your machine by follow these instructions:
@@ -52,7 +52,7 @@ cd ~/catkin_ws
 catkin_make  
 ``` 
 
-####**_Running The Examples_**  
+#### **_Running The Examples_**  
 -------------------------------  
 
 There are three examples included:  
@@ -110,7 +110,7 @@ roslaunch sample_pubsub talker2
 
 
 
-####**_Version History_**  
+#### **_Version History_**  
 -------------------------  
 2016-05-01: Update to fizzbuzz.launch to output to screen  
 2016-04-29: Added sample launch files  
